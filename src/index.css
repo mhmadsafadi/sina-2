@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav .nav-link a {
+  text-shadow: #5f82ea 5px 5px 10px;
+}
+
+.wave-1 {
+  animation: 1s infinite alternate wavingOne;
+}
+.wave-2 {
+  animation: 0.7s infinite alternate wavingTwo;
+}
+
+@keyframes wavingOne {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes wavingTwo {
+  from {
+    transform: rotateX(90deg) translateX(0);
+  }
+
+  to {
+    transform: rotateX(0deg) translateX(100px);
+  }
+}
+
+
+
